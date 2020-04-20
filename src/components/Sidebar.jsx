@@ -1,5 +1,6 @@
-import React from "react"
+import React, { useContext } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import SidebarContext from "../context/SidebarContext"
 import Img from "gatsby-image"
 import data from "../data/data.json"
 import { isEng } from "../utils/utils"
@@ -18,10 +19,14 @@ const Sidebar = ({ lang }) => {
     }
   `)
 
+  const { showSidebar } = useContext(SidebarContext)
   let langProp = lang.toLowerCase()
 
   return (
-    <div className="sidebar" style={{ width: isEng(lang) ? "230px" : "201px" }}>
+    <div
+      className={`sidebar${showSidebar ? " show" : ""}`}
+      style={{ width: isEng(lang) ? "230px" : "201px" }}
+    >
       <Img
         className="sidebarLogo"
         fluid={query.file.childImageSharp.fluid}

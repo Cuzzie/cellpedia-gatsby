@@ -14,6 +14,7 @@ $headerFontFamily = Roboto
   min-height 100vh
   overflow hidden
   position fixed
+  transition right 400ms ease-in-out
   z-index 10
   .sidebarLogo
     width 85%
@@ -24,11 +25,31 @@ $headerFontFamily = Roboto
   li
     font-size $liFontSize
     line-height 2.2
+@media (max-width: 512px) 
+  .sidebar
+    right -230px
+    &.show
+      right 0
+.main
+  position relative
+  right 0
+  padding-left 201px
+  transition all 400ms ease-in-out
+  &.eng
+    padding-left 230px
+  @media (max-width: 512px) 
+    padding-left 0
+    &.eng
+      padding-left 0
+    &.pushed
+      right 201px
+      &.eng
+        right 230px
 .content
   max-width 1140px
   color $textColor
   line-height 1.8
-  padding 10px
+  padding 20px
   position relative
   margin-left auto
   margin-right auto
@@ -37,6 +58,8 @@ $headerFontFamily = Roboto
     border-style solid
     border-width 0 0 1px
     border-color black
+  @media (max-width: 512px) 
+    padding-left 20px!important
   h1
     color black
     font-size $mainHeaderFontSize
@@ -47,5 +70,8 @@ $headerFontFamily = Roboto
     font-family $headerFontFamily
   p
     font-size $textFontSize
+  ul
+  ol
+    padding-left 20px
   li > p
     margin 0
