@@ -27,11 +27,13 @@ const Sidebar = ({ lang }) => {
       className={`sidebar${showSidebar ? " show" : ""}`}
       style={{ width: isEng(lang) ? "230px" : "201px" }}
     >
-      <Img
-        className="sidebarLogo"
-        fluid={query.file.childImageSharp.fluid}
-        alt="Sidebar logo"
-      />
+      <Link to="/">
+        <Img
+          className="sidebarLogo"
+          fluid={query.file.childImageSharp.fluid}
+          alt="Sidebar logo"
+        />
+      </Link>
       <ul>
         <li>
           <Link to={data.cellTherapy[`${langProp}`].path}>
