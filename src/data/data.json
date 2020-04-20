@@ -1,0 +1,68 @@
+{
+  "cellTherapy": {
+    "eng": {
+      "title": "Cell Therapy",
+      "path": "/en/cell-therapy"
+    },
+    "cn": {
+      "title": "细胞疗法",
+      "path": "/cell-therapy"
+    },
+    "imgClass": "cellTherapyImg"
+  },
+  "hematopoietic": {
+    "eng": {
+      "title": "Hematopoietic Stem Cells",
+      "path": "/en/hematopoietic-stem-cells"
+    },
+    "cn": {
+      "title": "造血干细胞",
+      "path": "/hematopoietic-stem-cells"
+    },
+    "imgClass": "hematopoieticImg"
+  },
+  "immune": {
+    "eng": {
+      "title": "Immune Cells",
+      "path": "/en/immune-cells"
+    },
+    "cn": {
+      "title": "免疫细胞",
+      "path": "/immune-cells"
+    },
+    "imgClass": "immuneImg"
+  },
+  "stemCells": {
+    "eng": {
+      "title": "Stem Cells",
+      "path": "/en/stem-cells"
+    },
+    "cn": {
+      "title": "干细胞解说",
+      "path": "/stem-cells"
+    },
+    "imgClass": "stemCellsImg"
+  },
+  "mesenchymal": {
+    "eng": {
+      "title": "Mesenchymal Stem Cells",
+      "path": "/en/mesenchymal-stem-cells"
+    },
+    "cn": {
+      "title": "间充质干细胞",
+      "path": "/mesenchymal-stem-cells"
+    },
+    "imgClass": "mesenchymalImg"
+  },
+  "international": {
+    "eng": {
+      "title": "International Standards",
+      "path": "/en/international-standards"
+    },
+    "cn": {
+      "title": "国际标准",
+      "path": "/international-standards"
+    },
+    "imgClass": "internationalImg"
+  }
+}

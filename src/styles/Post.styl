@@ -1,0 +1,51 @@
+$textColor = #54595f
+$mainHeaderFontSize = 30px
+$subHeaderFontSize = 21px
+$textFontSize = 16px
+$liFontSize = 14px
+$headerFontFamily = Roboto
+
+.sidebar
+  background-color #f7f7f7
+  margin 0
+  padding 0
+  top 0
+  height 100%
+  min-height 100vh
+  overflow hidden
+  position fixed
+  z-index 10
+  .sidebarLogo
+    width 85%
+    margin 0 auto
+    margin-top 10px
+  ul
+    padding-left 27px
+  li
+    font-size $liFontSize
+    line-height 2.2
+.content
+  max-width 1140px
+  color $textColor
+  line-height 1.8
+  padding 10px
+  position relative
+  margin-left auto
+  margin-right auto
+  z-index 1
+  .main-header
+    border-style solid
+    border-width 0 0 1px
+    border-color black
+  h1
+    color black
+    font-size $mainHeaderFontSize
+    font-family $headerFontFamily
+    font-weight 600
+    margin 0
+  h3
+    font-family $headerFontFamily
+  p
+    font-size $textFontSize
+  li > p
+    margin 0
